@@ -1,7 +1,7 @@
 import requests
 import json
 
-# SDK (fork) do SMSActivate apontando para HeroSMS
+# SDK (fork) of SMSActivate pointing to HeroSMS
 class HeroSMSActivateAPI:
 
     def __init__(self, api_key):
@@ -453,3 +453,4 @@ class HeroSMSActivateAPI:
             payload['date'] = date
         r = requests.get(self.__api_url, params=payload)
         return self.response("getOutgoingCalls", r.text)
+
