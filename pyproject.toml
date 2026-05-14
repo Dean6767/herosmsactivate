@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "herosmsactivate"
+version = "1.0.0"
+description = "Python wrapper for the HeroSMS API (fork of smsactivate after the SMS-Activate shutdown)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests"]
+authors = [{ name = "Dean6767" }]
+license = { text = "MIT" }
+keywords = ["sms", "herosms", "smsactivate", "otp", "verification"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/Dean6767/herosmsactivate"
+Issues = "https://github.com/Dean6767/herosmsactivate/issues"
+
+[tool.setuptools.packages.find]
+include = ["herosmsactivate*"]
